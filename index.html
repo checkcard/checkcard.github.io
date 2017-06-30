@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Проверка безопасности</h1>
+            </div>
+            <h3>Узнайте, есть ли ваша карта в базе данных хакеров!</h3>
+            <h3>Введите данные, чтобы проверить!</h3>
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <form method="post" action="" id="form">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">Номер карты</span>
+                            <input type="tel" class="form-control" placeholder="1111222233334444" maxlength="23" inputmode="numeric" pattern="[0-9\s]{15,19}" required="" autofocus="autofocus">
+                        </div> <br>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">CVC2</span>
+                            <input type="text" class="form-control" pattern="\d{3}" value="123">
+                        </div><br>
+                        <div class="input-group input-group-lg">
+                        <button type="button" class="btn btn-warning btn-lg" data-loading-text="ПОИСК..." id="check" ><span class="glyphicon glyphicon-warning-sign"></span> Проверить! </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4" id="mastercard"><img src="images/mastercard-visa.png" width="200"></div>
+            </div>
+            <img src="images/homer-bg.gif" id="homer">
+            <div class="hidden" id="success-alert">
+              <h2>Успех</h2>
+              <div>Ваши данные были успешно добавлены.</div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/manager.js"></script>
+    </body>
+</html>

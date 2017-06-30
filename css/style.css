@@ -1,0 +1,22 @@
+body {
+    background-color: #eee;
+    text-transform: uppercase;
+    overflow-y: hidden;
+}
+
+#homer {
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: -550px;
+    transition-property: bottom;
+    transition-duration: 6s;
+}
+
+#success-alert {
+    opacity: 0;
+}
+
+#mastercard {
+    padding-top: 20px;
+}
